@@ -2,7 +2,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f4f7;
-    color: #808080;
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -26,7 +26,7 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
 }
 
