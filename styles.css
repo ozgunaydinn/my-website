@@ -1,62 +1,71 @@
-/* Genel Stil Ayarları */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f4f7;
-    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 800px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
-    margin-bottom: 20px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.logo {
-    max-width: 250px;
-    height: auto;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-h1 {
-    font-size: 36px;
-    color: #4CAF50;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.message {
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-.contact {
-    font-size: 16px;
-    color: #555;
-}
-
-.contact a {
-    color: #4CAF50;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
     margin-top: 20px;
-    font-size: 14px;
-    color: #888;
 }
