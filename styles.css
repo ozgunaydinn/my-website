@@ -3,8 +3,8 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: flex-start; /* İçeriği sayfanın sol tarafında tutar */
     height: 100vh;
-    text-align: left; /* Tüm metinleri sola yaslamak için */
     background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
     color: #333;
     font-family: Arial, sans-serif;
@@ -15,18 +15,18 @@ body {
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 50%; /* İçeriğin genişliğini ayarlar */
-    margin-left: 5%; /* Sayfanın soluna yaslar */
+    width: 50%; /* İçeriği belirli bir genişlikte tutar */
+    margin-left: 10%; /* Sayfanın sol bölgesinde ortalamak için */
+    text-align: center; /* Metni ortalar */
 }
 
 .logo {
     width: 150px;
-    display: block; /* Logoyu sola yaslamak için */
     margin-bottom: 20px;
 }
 
 h1, p, .contact {
-    text-align: left; /* Metinleri sola hizala */
+    text-align: center; /* İçeriği ortalar */
 }
 
 .contact {
