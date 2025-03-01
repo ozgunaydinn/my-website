@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url('your-facade-image.jpg') no-repeat center center/cover;
+    background: url('bacground.png') no-repeat center center/cover;
     color: white;
     font-family: Arial, sans-serif;
     position: relative;
