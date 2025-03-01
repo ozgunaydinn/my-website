@@ -6,7 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url('your-facade-image.jpg') no-repeat center center/cover;
+    background: url('cladeng-background.png') no-repeat center center/cover;
     color: white;
     font-family: Arial, sans-serif;
     position: relative;
@@ -24,7 +24,7 @@ body {
     z-index: 2;
 }
 .logo {
-    width: 150px;
+    width: 300px;
     margin-bottom: 20px;
 }
 h1 {
