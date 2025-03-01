@@ -5,7 +5,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* İçeriği sayfanın sol tarafında tutar */
-    background: url('your-background.jpg') no-repeat center center/cover; /* Arka plan görseli */
+    background: url('cladeng-background.png') no-repeat center center/cover; /* Arka plan görseli */
     color: #fff;
     font-family: Arial, sans-serif;
     position: relative;
