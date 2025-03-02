@@ -84,13 +84,13 @@ main {
 }
 
 .text-container h2 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   font-weight: 600;
   margin-bottom: 20px; /* Başlık ile paragraf arasına boşluk ekliyoruz */
 }
 
 .text-container p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.6;
   margin-top: 20px; /* Paragraf ile üstündeki başlık arasına boşluk ekliyoruz */
 }
