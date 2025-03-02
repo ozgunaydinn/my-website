@@ -47,7 +47,7 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 60vh; /* Sayfa yüksekliğini kısaltıyoruz */
+  height: 40vh; /* Sayfa yüksekliğini kısaltıyoruz */
   margin: 0;
 }
 
