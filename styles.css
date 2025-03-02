@@ -111,17 +111,17 @@ main {
 .contact-container h2 {
   font-size: 1em; /* İletişim başlığını küçültüyoruz */
   font-weight: 600;
-  margin-bottom: 10px; /* İletişim başlığı ile paragraf arasına boşluk ekliyoruz */
+  margin-bottom: 3px; /* İletişim başlığı ile paragraf arasına boşluk ekliyoruz */
 }
 
 .contact-container p {
-  font-size: 1.8em; /* Mail adresinin boyutunu büyütüyoruz */
+  font-size: 1.6em; /* Mail adresinin boyutunu büyütüyoruz */
   line-height: 1.6;
-  color: #333; /* Koyu gri renk ile mail adresini belirgin hale getiriyoruz */
+  color: #00FF00; /* Koyu gri renk ile mail adresini belirgin hale getiriyoruz */
 }
 
 .contact-container a {
-  color: #333; /* Mail adresi için renk değiştirdik */
+  color: #00FF00; /* Mail adresi için renk değiştirdik */
   text-decoration: none;
   font-weight: 500; /* Mail adresini daha belirgin hale getiriyoruz */
 }
