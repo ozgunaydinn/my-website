@@ -107,32 +107,32 @@ main {
   text-decoration: underline;
 }
 
-/* Minimalist Geri Sayım (Countdown) */
-.countdown-container {
+/* LinkedIn Butonu */
+.linkedin-container {
   text-align: center;
-  margin-top: 20px;
-  color: white;
+  margin-top: 30px;
 }
 
-.countdown-container p {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-#countdown {
-  font-size: 3em;
-  font-weight: 600;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  color: #fff;
+.linkedin-button {
   display: inline-block;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  width: fit-content;
-  margin-top: 10px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  background-color: #0077b5; /* LinkedIn'in marka rengi */
+  padding: 12px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 36px;
+  transition: all 0.3s ease;
+}
+
+.linkedin-button i {
+  color: white;
+  font-size: 28px; /* Font Awesome LinkedIn ikonunun boyutunu ayarlıyoruz */
+}
+
+.linkedin-button:hover {
+  background-color: #005582; /* Hover durumunda daha koyu mavi renk */
+  transform: scale(1.1); /* Hoverda biraz büyüme efekti */
 }
 
 /* Footer */
@@ -154,8 +154,13 @@ footer {
     height: 300px;
   }
 
-  #countdown {
-    font-size: 2.5em;
-    padding: 15px;
+  .linkedin-button {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+  }
+
+  .linkedin-button i {
+    font-size: 22px;
   }
 }
