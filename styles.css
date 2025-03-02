@@ -111,7 +111,7 @@ main {
 .linkedin-container {
   text-align: center;
   margin-top: 10px;
-  padding: 1px 0; /* Beyaz kısmı daha da küçülttük */
+  padding: 0; /* Fazladan boşluğu kaldırıyoruz */
 }
 
 .linkedin-button {
