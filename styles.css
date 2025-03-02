@@ -47,14 +47,14 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 60vh; /* Sayfa yüksekliğini kısaltıyoruz */
+  height: 50vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
   margin: 0;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%; /* Görselin yüksekliği 60vh olacak */
+  height: 100%; /* Görselin yüksekliğini 50vh'ye ayarlıyoruz */
   width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
@@ -142,7 +142,7 @@ footer {
   padding: 20px;
   background-color: #333;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 20px; /* Footer alanını da kısaltıyoruz */
 }
 
 /* Responsive tasarım */
@@ -152,7 +152,7 @@ footer {
   }
 
   .image-container {
-    height: 300px;
+    height: 250px; /* Görselin yüksekliğini mobilde kısaltıyoruz */
   }
 
   .linkedin-button {
