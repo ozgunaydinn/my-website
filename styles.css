@@ -105,11 +105,11 @@ main {
   color: white;
   padding: 20px;
   width: 80%;
-  font-size: 0.8em; /* İletişim yazı boyutunu küçültüyoruz */
+  font-size: 2em; /* İletişim yazı boyutunu küçültüyoruz */
 }
 
 .contact-container h2 {
-  font-size: 1.8em; /* İletişim başlığını küçültüyoruz */
+  font-size: 1em; /* İletişim başlığını küçültüyoruz */
   font-weight: 600;
   margin-bottom: 10px; /* İletişim başlığı ile paragraf arasına boşluk ekliyoruz */
 }
