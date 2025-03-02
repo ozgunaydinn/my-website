@@ -10,7 +10,7 @@
 body {
   background-color: #f4f4f4;
   color: #fff;
-  font-family: 'Montserrat', sans-serif; /* Genel font Montserrat */
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -45,7 +45,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
-  gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
+  gap: 0;
   width: 100%;
   height: 65vh; /* Sayfa yüksekliğini %65 olarak ayarladık */
   margin: 0;
@@ -54,12 +54,12 @@ main {
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%; /* Görselin yüksekliğini 65vh'ye ayarladık */
-  width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
-  background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
+  height: 100%;
+  width: 100%;
+  background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Görsel sabit kalacak */
+  background-attachment: fixed;
 }
 
 .image-overlay {
@@ -68,7 +68,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7); /* Siyah filtre ekliyoruz */
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Metin kısmı */
@@ -86,45 +86,45 @@ main {
 .text-container h2 {
   font-size: 2.8em;
   font-weight: 600;
-  margin-bottom: 20px; /* Başlık ile paragraf arasına boşluk ekliyoruz */
+  margin-bottom: 20px;
 }
 
 .text-container p {
   font-size: 1.4em;
   line-height: 1.6;
-  margin-top: 20px; /* Paragraf ile üstündeki başlık arasına boşluk ekliyoruz */
+  margin-top: 20px;
 }
 
 /* İletişim kısmı */
 .contact-container {
   position: absolute;
-  bottom: 20px; /* İletişim kısmını alt kısma yerleştiriyoruz */
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: white;
   padding: 20px;
   width: 80%;
-  font-size: 1em; /* İletişim yazı boyutunu küçültüyoruz */
+  font-size: 1em;
   font-family: 'Poppins', sans-serif; /* İletişim kısmı için Poppins fontu */
 }
 
 .contact-container h2 {
-  font-size: 1em; /* İletişim başlığını küçültüyoruz */
+  font-size: 1em;
   font-weight: 600;
-  margin-bottom: 3px; /* İletişim başlığı ile paragraf arasına boşluk ekliyoruz */
+  margin-bottom: 3px;
 }
 
 .contact-container p {
-  font-size: 1.6em; /* Mail adresinin boyutunu büyütüyoruz */
+  font-size: 1.6em;
   line-height: 1.6;
-  color: #00FF00; /* Koyu gri renk ile mail adresini belirgin hale getiriyoruz */
+  color: #00FF00;
 }
 
 .contact-container a {
-  color: #00FF00; /* Mail adresi için renk değiştirdik */
+  color: #00FF00;
   text-decoration: none;
-  font-weight: 500; /* Mail adresini daha belirgin hale getiriyoruz */
+  font-weight: 500;
 }
 
 .contact-container a:hover {
@@ -134,31 +134,31 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 0; /* Fazladan boşluk kaldırıldı */
-  padding: 0; /* Fazladan boşluk kaldırıldı */
-  margin: 8px; /* LinkedIn container için margin eklendi */
+  margin-top: 0;
+  padding: 0;
+  margin: 8px;
 }
 
 .linkedin-button {
   display: inline-block;
-  background-color: #0077b5; /* LinkedIn'in marka rengi */
-  padding: 8px; /* Butonun içini küçültüyoruz */
+  background-color: #0077b5;
+  padding: 8px;
   border-radius: 50%;
-  width: 40px; /* Butonun boyutunu küçültüyoruz */
-  height: 40px; /* Butonun boyutunu küçültüyoruz */
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 24px; /* İkonu ortalamak için */
+  line-height: 24px;
   transition: all 0.3s ease;
 }
 
 .linkedin-button i {
   color: white;
-  font-size: 20px; /* İkon boyutunu küçültüyoruz */
+  font-size: 20px;
 }
 
 .linkedin-button:hover {
-  background-color: #005582; /* Hover durumunda daha koyu mavi renk */
-  transform: scale(1.1); /* Hoverda biraz büyüme efekti */
+  background-color: #005582;
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -167,26 +167,43 @@ footer {
   padding: 20px;
   background-color: #333;
   color: #fff;
-  margin-top: 20px; /* Footer alanını da kısaltıyoruz */
+  margin-top: 20px;
 }
 
-/* Responsive tasarım */
+/* Responsive Tasarım */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Tek sütun yapıyoruz */
+    grid-template-columns: 1fr; /* Tek sütun */
+    height: 50vh; /* Sayfa yüksekliğini mobilde kısaltıyoruz */
   }
 
   .image-container {
     height: 250px; /* Görselin yüksekliğini mobilde kısaltıyoruz */
   }
 
+  .text-container h2 {
+    font-size: 2em; /* Başlık boyutunu mobilde küçültüyoruz */
+  }
+
+  .text-container p {
+    font-size: 1.2em; /* Paragraf boyutunu mobilde küçültüyoruz */
+  }
+
   .linkedin-button {
-    width: 35px; /* Buton boyutunu mobilde daha da küçültüyoruz */
+    width: 35px; /* Buton boyutunu mobilde küçültüyoruz */
     height: 35px;
     padding: 6px;
   }
 
   .linkedin-button i {
-    font-size: 18px;
+    font-size: 18px; /* İkon boyutunu mobilde küçültüyoruz */
+  }
+
+  .contact-container p {
+    font-size: 1.2em; /* İletişim yazısının boyutunu mobilde küçültüyoruz */
+  }
+
+  .contact-container h2 {
+    font-size: 0.9em; /* İletişim başlığını mobilde küçültüyoruz */
   }
 }
