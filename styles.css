@@ -107,27 +107,32 @@ main {
   text-decoration: underline;
 }
 
-/* Geri Sayım (Countdown) */
+/* Minimalist Geri Sayım (Countdown) */
 .countdown-container {
   text-align: center;
   margin-top: 20px;
   color: white;
 }
 
-.countdown-container h3 {
-  font-size: 2em;
-  font-weight: 600;
+.countdown-container p {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 
 #countdown {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #ff5722;
-  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 3em;
+  font-weight: 600;
   padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: #fff;
   display: inline-block;
-  border-radius: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
@@ -147,5 +152,10 @@ footer {
 
   .image-container {
     height: 300px;
+  }
+
+  #countdown {
+    font-size: 2.5em;
+    padding: 15px;
   }
 }
