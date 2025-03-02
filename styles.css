@@ -44,24 +44,19 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Üç sütunlu grid */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-}
-
-.grid-item {
-  background-color: transparent;
-  padding: 0;
-  border-radius: 0;
-  box-shadow: none;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
   height: 500px;
+  width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Görsel sayfa kaydırıldıkça sabit kalacak */
 }
 
 .image-overlay {
