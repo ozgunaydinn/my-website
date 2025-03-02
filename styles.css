@@ -3,14 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Genel font Montserrat */
 }
 
 /* Sayfa arka planı */
 body {
   background-color: #f4f4f4;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Genel font Montserrat */
   margin: 0;
 }
 
@@ -106,6 +106,7 @@ main {
   padding: 20px;
   width: 80%;
   font-size: 1em; /* İletişim yazı boyutunu küçültüyoruz */
+  font-family: 'Poppins', sans-serif; /* İletişim kısmı için Poppins fontu */
 }
 
 .contact-container h2 {
