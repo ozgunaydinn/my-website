@@ -110,24 +110,25 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding: 10px 0; /* Beyaz kısmı daha da küçülttük */
 }
 
 .linkedin-button {
   display: inline-block;
   background-color: #0077b5; /* LinkedIn'in marka rengi */
-  padding: 12px;
+  padding: 8px; /* Butonun içini küçültüyoruz */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px; /* Butonun boyutunu küçültüyoruz */
+  height: 40px; /* Butonun boyutunu küçültüyoruz */
   text-align: center;
-  line-height: 36px;
+  line-height: 24px; /* İkonu ortalamak için */
   transition: all 0.3s ease;
 }
 
 .linkedin-button i {
   color: white;
-  font-size: 28px; /* Font Awesome LinkedIn ikonunun boyutunu ayarlıyoruz */
+  font-size: 20px; /* İkon boyutunu küçültüyoruz */
 }
 
 .linkedin-button:hover {
@@ -155,12 +156,12 @@ footer {
   }
 
   .linkedin-button {
-    width: 50px;
-    height: 50px;
-    padding: 8px;
+    width: 35px; /* Buton boyutunu mobilde daha da küçültüyoruz */
+    height: 35px;
+    padding: 6px;
   }
 
   .linkedin-button i {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
