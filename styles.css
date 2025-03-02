@@ -47,7 +47,7 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 50vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
+  height: 65vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
   margin: 0;
 }
 
@@ -110,7 +110,7 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 0; /* Fazladan boşluk kaldırıldı */
+  margin-top: 5px; /* Fazladan boşluk kaldırıldı */
   padding: 0; /* Fazladan boşluk kaldırıldı */
 }
 
