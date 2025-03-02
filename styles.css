@@ -54,7 +54,7 @@ main {
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100vh; /* Görselin yüksekliği tam sayfa yüksekliği kadar */
+  height: 60vh; /* Görselin yüksekliği tam sayfa yüksekliği kadar */
   width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
