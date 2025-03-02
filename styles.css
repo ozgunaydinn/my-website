@@ -47,7 +47,7 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 65vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
+  height: 50vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
   margin: 0;
 }
 
@@ -84,20 +84,35 @@ main {
   width: 80%;
 }
 
-.text-container h2,
-.contact-container h2 {
+.text-container h2 {
   font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Başlık ile paragraf arasına boşluk ekliyoruz */
 }
 
-.text-container p,
-.contact-container p {
+.text-container p {
   font-size: 1.2em;
   line-height: 1.6;
+  margin-top: 20px; /* Paragraf ile üstündeki başlık arasına boşluk ekliyoruz */
 }
 
 /* İletişim kısmı */
+.contact-container {
+  margin-top: 30px; /* İletişim kısmının başlık ile arasına boşluk ekliyoruz */
+}
+
+.contact-container h2 {
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-bottom: 15px; /* İletişim başlığı ile paragraf arasına boşluk ekliyoruz */
+}
+
+.contact-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* İletişim kısmı bağlantısı */
 .contact-container a {
   color: #007BFF;
   text-decoration: none;
@@ -110,7 +125,7 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 15px; /* Fazladan boşluk kaldırıldı */
+  margin-top: 8px; /* Fazladan boşluk kaldırıldı */
   padding: 0; /* Fazladan boşluk kaldırıldı */
 }
 
