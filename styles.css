@@ -47,14 +47,14 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 50vh; /* Sayfa yüksekliğini %50 olarak ayarladık */
+  height: 65vh; /* Sayfa yüksekliğini %65 olarak ayarladık */
   margin: 0;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%; /* Görselin yüksekliğini 50vh'ye ayarlıyoruz */
+  height: 100%; /* Görselin yüksekliğini 65vh'ye ayarladık */
   width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
@@ -72,10 +72,9 @@ main {
 }
 
 /* Metin kısmı */
-.text-container,
-.contact-container {
+.text-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -98,7 +97,15 @@ main {
 
 /* İletişim kısmı */
 .contact-container {
-  margin-top: 30px; /* İletişim kısmının başlık ile arasına boşluk ekliyoruz */
+  position: absolute;
+  bottom: 20px; /* İletişim kısmını alt kısma yerleştiriyoruz */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 80%;
+  font-size: 0.9em; /* Yazı boyutunu küçültüyoruz */
 }
 
 .contact-container h2 {
@@ -108,7 +115,7 @@ main {
 }
 
 .contact-container p {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.6;
 }
 
@@ -125,8 +132,9 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 8px; /* Fazladan boşluk kaldırıldı */
+  margin-top: 0; /* Fazladan boşluk kaldırıldı */
   padding: 0; /* Fazladan boşluk kaldırıldı */
+  margin: 8px; /* LinkedIn container için margin eklendi */
 }
 
 .linkedin-button {
