@@ -110,8 +110,8 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 10px;
-  padding: 0; /* Fazladan boşluğu kaldırıyoruz */
+  margin-top: 0; /* Fazladan boşluk kaldırıldı */
+  padding: 0; /* Fazladan boşluk kaldırıldı */
 }
 
 .linkedin-button {
