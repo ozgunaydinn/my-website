@@ -170,8 +170,40 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive Tasarım (Değişiklikler yapmadık) */
+/* Responsive Tasarım */
 @media (max-width: 768px) {
-  /* Media query kısmını boş bırakıyoruz çünkü responsive tasarımda değişiklik istemiyorsunuz */
-  /* Ancak isterseniz belirli düzenlemeleri yine de uygulayabilirsiniz */
+  .grid-container {
+    grid-template-columns: 1fr; /* Tek sütun */
+    height: 50vh; /* Sayfa yüksekliğini mobilde kısaltıyoruz */
+  }
+
+  .image-container {
+    height: 250px; /* Görselin yüksekliğini mobilde kısaltıyoruz */
+  }
+
+  .text-container h2 {
+    font-size: 2em; /* Başlık boyutunu mobilde küçültüyoruz */
+  }
+
+  .text-container p {
+    font-size: 1.2em; /* Paragraf boyutunu mobilde küçültüyoruz */
+  }
+
+  .linkedin-button {
+    width: 35px; /* Buton boyutunu mobilde küçültüyoruz */
+    height: 35px;
+    padding: 6px;
+  }
+
+  .linkedin-button i {
+    font-size: 18px; /* İkon boyutunu mobilde küçültüyoruz */
+  }
+
+  .contact-container p {
+    font-size: 1.2em; /* İletişim yazısının boyutunu mobilde küçültüyoruz */
+  }
+
+  .contact-container h2 {
+    font-size: 0.9em; /* İletişim başlığını mobilde küçültüyoruz */
+  }
 }
