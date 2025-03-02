@@ -105,7 +105,7 @@ main {
   color: white;
   padding: 20px;
   width: 80%;
-  font-size: 2em; /* İletişim yazı boyutunu küçültüyoruz */
+  font-size: 1em; /* İletişim yazı boyutunu küçültüyoruz */
 }
 
 .contact-container h2 {
@@ -115,7 +115,7 @@ main {
 }
 
 .contact-container p {
-  font-size: 1.1em; /* Mail adresinin boyutunu büyütüyoruz */
+  font-size: 1.8em; /* Mail adresinin boyutunu büyütüyoruz */
   line-height: 1.6;
   color: #333; /* Koyu gri renk ile mail adresini belirgin hale getiriyoruz */
 }
