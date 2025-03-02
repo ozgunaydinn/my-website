@@ -31,37 +31,34 @@ header .header-content {
 }
 
 header .logo img {
-  width: 200px; /* Logoyu büyütüyoruz */
+  width: 220px; /* Logoyu büyütüyoruz */
   height: auto;
 }
 
 /* Ana İçerik: Grid Tasarım */
 main {
-  padding: 40px 20px;
+  padding: 0;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr; /* Üç sütunlu grid */
+  gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .grid-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 400px;
-  border-radius: 8px;
-  overflow: hidden;
+  height: 500px;
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
   background-position: center;
@@ -77,21 +74,32 @@ main {
 }
 
 /* Metin kısmı */
+.text-container,
+.contact-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: 80%;
+}
+
 .text-container h2,
 .contact-container h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
 }
 
 .text-container p,
 .contact-container p {
   font-size: 1.2em;
   line-height: 1.6;
-  color: #333;
 }
 
+/* İletişim kısmı */
 .contact-container a {
   color: #007BFF;
   text-decoration: none;
@@ -113,7 +121,7 @@ footer {
 /* Responsive tasarım */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Tek sütun yapıyoruz */
   }
 
   .image-container {
