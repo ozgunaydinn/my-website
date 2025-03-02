@@ -110,7 +110,8 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding: 20px 0; /* Beyaz kısmın yüksekliğini üçte birine düşürdük */
 }
 
 .linkedin-button {
