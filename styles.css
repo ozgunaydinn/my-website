@@ -47,14 +47,14 @@ main {
   grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
   gap: 0; /* Gridler arasındaki boşluğu kaldırıyoruz */
   width: 100%;
-  height: 70vh; /* Sayfa yüksekliğinin %70'i kadar */
+  height: 60vh; /* Sayfa yüksekliğini kısaltıyoruz, burada 60vh'yi seçtik */
   margin: 0;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%; /* Görselin yüksekliği 70vh olacak */
+  height: 100%; /* Görselin yüksekliği 60vh olacak */
   width: 100%; /* Görselin genişliği sayfa genişliğinde olacak */
   background-image: url('background.jpg'); /* Görseli arka plan olarak ekliyoruz */
   background-size: cover;
@@ -107,18 +107,26 @@ main {
   text-decoration: underline;
 }
 
-/* Şehir Silüeti Görseli */
-.city-silhouette {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  padding: 10px 0;
+/* Sosyal Medya Butonları */
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-.city-silhouette img {
-  width: 100%;
-  height: auto;
-  display: block;
+.social-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  color: white;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: #007BFF;
 }
 
 /* Footer */
@@ -138,5 +146,10 @@ footer {
 
   .image-container {
     height: 300px;
+  }
+
+  .social-media-buttons {
+    flex-direction: column;
+    gap: 10px;
   }
 }
