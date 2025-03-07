@@ -3,15 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; /* Genel font Montserrat */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Sayfa arka planı */
 body {
   background-color: #f4f4f4;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
 }
 
 /* Header */
@@ -24,15 +22,8 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .header-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 header .logo img {
-  width: 250px; /* Logoyu büyütüyoruz */
+  width: 220px;
   height: auto;
 }
 
@@ -43,23 +34,22 @@ main {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
-  gap: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 65vh; /* Sayfa yüksekliğini %65 olarak ayarladık */
+  height: 60vh;
   margin: 0;
 }
 
 /* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .image-overlay {
@@ -68,13 +58,13 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* Metin kısmı */
 .text-container {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -84,47 +74,37 @@ main {
 }
 
 .text-container h2 {
-  font-size: 2.8em;
+  font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .text-container p {
-  font-size: 1.4em;
-  line-height: 1.6;
-  margin-top: 20px;
+  font-size: 1.3em;
+  line-height: 1.5;
 }
 
 /* İletişim kısmı */
 .contact-container {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   color: white;
-  padding: 20px;
-  width: 80%;
+  padding: 10px;
   font-size: 1em;
-  font-family: 'Poppins', sans-serif; /* İletişim kısmı için Poppins fontu */
 }
 
 .contact-container h2 {
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 3px;
 }
 
-.contact-container p {
-  font-size: 1.6em;
-  line-height: 1.6;
-  color: #00FF00;
-}
-
-.contact-container a {
-  color: #00FF00;
+.contact-container p, .contact-container a {
+  font-size: 1.4em;
+  color: #4caf50;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .contact-container a:hover {
@@ -134,8 +114,6 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 0;
-  padding: 0;
   margin: 8px;
 }
 
@@ -173,37 +151,32 @@ footer {
 /* Responsive Tasarım */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Tek sütun */
-    height: 50vh; /* Sayfa yüksekliğini mobilde kısaltıyoruz */
+    height: 50vh;
   }
 
   .image-container {
-    height: 250px; /* Görselin yüksekliğini mobilde kısaltıyoruz */
+    background-attachment: scroll;
   }
 
   .text-container h2 {
-    font-size: 2em; /* Başlık boyutunu mobilde küçültüyoruz */
+    font-size: 2em;
   }
 
   .text-container p {
-    font-size: 1.2em; /* Paragraf boyutunu mobilde küçültüyoruz */
+    font-size: 1.2em;
   }
 
   .linkedin-button {
-    width: 35px; /* Buton boyutunu mobilde küçültüyoruz */
+    width: 35px;
     height: 35px;
     padding: 6px;
   }
 
   .linkedin-button i {
-    font-size: 18px; /* İkon boyutunu mobilde küçültüyoruz */
+    font-size: 18px;
   }
 
-  .contact-container p {
-    font-size: 1.2em; /* İletişim yazısının boyutunu mobilde küçültüyoruz */
-  }
-
-  .contact-container h2 {
-    font-size: 0.9em; /* İletişim başlığını mobilde küçültüyoruz */
+  .contact-container p, .contact-container a {
+    font-size: 1.2em;
   }
 }
