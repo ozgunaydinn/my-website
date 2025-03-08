@@ -3,14 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif; /* Genel font Montserrat */
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Sayfa arka planı */
 body {
   background-color: #f4f4f4;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -24,19 +22,13 @@ header {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-header .header-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 header .logo img {
-  width: 250px; /* Logoyu büyütüyoruz */
+  width: 250px;
   height: auto;
+  max-width: 100%; /* Mobil uyumluluk */
 }
 
-/* Ana İçerik: Grid Yapısı */
+/* Ana İçerik */
 main {
   padding: 0;
   margin: 0;
@@ -44,22 +36,18 @@ main {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr; /* Sadece bir sütun kullanıyoruz */
-  gap: 0;
+  grid-template-columns: 1fr;
   width: 100%;
-  height: 65vh; /* Sayfa yüksekliğini %65 olarak ayarladık */
-  margin: 0;
+  height: 65vh;
 }
 
-/* Görselin arka plan olarak kullanılması */
 .image-container {
   position: relative;
-  height: 100%;
   width: 100%;
+  min-height: 400px;
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 }
 
 .image-overlay {
@@ -71,10 +59,10 @@ main {
   background: rgba(0, 0, 0, 0.7);
 }
 
-/* Metin kısmı */
+/* Metin Kutusu */
 .text-container {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -84,47 +72,35 @@ main {
 }
 
 .text-container h2 {
-  font-size: 2.8em;
+  font-size: 2.5em;
   font-weight: 600;
-  margin-bottom: 20px;
 }
 
 .text-container p {
-  font-size: 1.4em;
-  line-height: 1.6;
-  margin-top: 20px;
+  font-size: 1.3em;
+  line-height: 1.5;
 }
 
-/* İletişim kısmı */
+/* İletişim */
 .contact-container {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: white;
-  padding: 20px;
   width: 80%;
-  font-size: 1em;
-  font-family: 'Poppins', sans-serif; /* İletişim kısmı için Poppins fontu */
 }
 
 .contact-container h2 {
   font-size: 1em;
   font-weight: 600;
-  margin-bottom: 3px;
 }
 
-.contact-container p {
-  font-size: 1.6em;
-  line-height: 1.6;
-  color: #32CD32; /* Yeni yeşil tonu */
-}
-
+.contact-container p,
 .contact-container a {
-  color: #32CD32; /* Yeni yeşil tonu */
+  font-size: 1.4em;
+  color: #32CD32;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .contact-container a:hover {
@@ -134,9 +110,7 @@ main {
 /* LinkedIn Butonu */
 .linkedin-container {
   text-align: center;
-  margin-top: 0;
-  padding: 0;
-  margin: 8px;
+  margin-top: 10px;
 }
 
 .linkedin-button {
@@ -147,7 +121,6 @@ main {
   width: 40px;
   height: 40px;
   text-align: center;
-  line-height: 24px;
   transition: all 0.3s ease;
 }
 
@@ -161,49 +134,30 @@ main {
   transform: scale(1.1);
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  margin-top: 20px;
-}
-
 /* Responsive Tasarım */
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* Tek sütun */
-    height: 50vh; /* Sayfa yüksekliğini mobilde kısaltıyoruz */
+    height: auto;
   }
 
   .image-container {
-    height: 250px; /* Görselin yüksekliğini mobilde kısaltıyoruz */
+    min-height: 300px;
   }
 
   .text-container h2 {
-    font-size: 2em; /* Başlık boyutunu mobilde küçültüyoruz */
+    font-size: 2em;
   }
 
   .text-container p {
-    font-size: 1.2em; /* Paragraf boyutunu mobilde küçültüyoruz */
-  }
-
-  .linkedin-button {
-    width: 35px; /* Buton boyutunu mobilde küçültüyoruz */
-    height: 35px;
-    padding: 6px;
-  }
-
-  .linkedin-button i {
-    font-size: 18px; /* İkon boyutunu mobilde küçültüyoruz */
+    font-size: 1.1em;
   }
 
   .contact-container p {
-    font-size: 1.2em; /* İletişim yazısının boyutunu mobilde küçültüyoruz */
+    font-size: 1.2em;
   }
 
-  .contact-container h2 {
-    font-size: 0.9em; /* İletişim başlığını mobilde küçültüyoruz */
+  .linkedin-button {
+    width: 35px;
+    height: 35px;
   }
 }
