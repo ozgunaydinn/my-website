@@ -84,7 +84,7 @@ main {
 /* İletişim */
 .contact-container {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -94,6 +94,8 @@ main {
 .contact-container h2 {
   font-size: 1em;
   font-weight: 600;
+  margin-bottom: 5px; /* Metinlerin çakışmasını önler */
+  display: block;
 }
 
 .contact-container p,
